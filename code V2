@@ -1,4 +1,4 @@
-print("Les jeux disponibles sont: morpion , pierre-feuille-ciseau(pfc) , dé , jeu des stylos(jds)"  )
+print("Les jeux disponibles sont: morpion , pierre-feuille-ciseau(pfc) , dé , jeu des stylos(jds) et pendu"  )
 Start = input("Quel jeu souhaitez-vous?")
 if Start == "morpion":
 
@@ -134,3 +134,36 @@ if Start == "jds":
         if len(b) == 1:
             print("Fin")
             break
+
+if Start == "pendu":
+    mot = str(input("Entrez le mot: "))
+    for m in range(30):
+        print("|")
+    word = list(mot)
+    essai = 12
+    print("Vous avez 12 essais")
+    cache = ["_" for i in mot]
+    print(cache)
+    while True:
+        letter = str(input("Entrez une lettre: "))
+        list = []
+
+        if letter in mot:
+            for k in range(len(word)):
+                if letter == word[k]:
+                    cache[k] = word[k]
+
+
+                else:
+                    cache[k] = cache[k]
+            print(cache)
+        else:
+            essai -= 1
+            print("Raté... il vous reste plus que " + str(essai) + " essais .")
+        if cache == word:
+            print("Bravo !! Vous avez gagné. Vous avez trouvé le mot: " + mot + "!")
+            break
+        elif essai == 0:
+            print("Dommage, vous avez perdu... le mot était: " + mot)
+            break
+
