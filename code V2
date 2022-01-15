@@ -1,9 +1,21 @@
-print("Les jeux disponibles sont: morpion , pierre-feuille-ciseau(pfc) , dé , jeu des stylos(jds) et pendu"  )
+import time
+print("Les jeux disponibles sont: \n" 
+      "1 : morpion\n"
+      "2 : pierre-feuille-ciseau\n"
+      "3 : jeu aléatoire du dé\n"
+      "4 : jeu des stylos\n"
+      "5 : pendu")
+
 Start = input("Quel jeu souhaitez-vous?")
-if Start == "morpion":
+if Start == "1":
+
+    print("Vous avez choisi le jeu du morpion ! ")
+    print("Commençons...")
+    time.sleep(1)
 
 
-    plateau = [" " for i in range(9)]  # crée un tableau de 9 caractères espaces " "
+
+    plateau = [" " for i in range(9)]  
 
 
     def afficherPlateau(p, gagnant=None):
@@ -24,14 +36,14 @@ if Start == "morpion":
             afficherPlateau(plateau)
             print(" Tour du joueur " + joueur + ". Entrez un nombre de 1 à 9.")
 
-            move = int(input()) - 1  # notre tableau est de 0 à 8, donc on retire 1
+            move = int(input()) - 1  
 
             if plateau[move] == " ":
                 plateau[move] = joueur
                 tour += 1
             else:
                 print("! Case déjà occupée, choisissez-en une autre.")
-                continue  # on passe au prochain passage de boucle sans exécuter le code ci-dessous
+                continue  
 
             if plateau[0] == plateau[1] == plateau[2] != " " \
             or plateau[3] == plateau[4] == plateau[5] != " " \
@@ -56,7 +68,11 @@ if Start == "morpion":
 
     morpion()
 
-if Start == "pfc":
+if Start == "2":
+    print("Vous avez choisi le jeu du pierre feuille ciseau ! ")
+    print("Commençons...")
+    time.sleep(1)
+
     joueur1 = input("Entrez le nom du joueur 1:").capitalize()
     joueur2 = input("Entrez le nom du joueur 2:").capitalize()
 
@@ -101,7 +117,11 @@ if Start == "pfc":
 
     jeu()
 
-if Start == "dé":
+if Start == "3":
+    print("Vous avez choisi le jeu du dé aléatoire ! ")
+    print("Commençons...")
+    time.sleep(1)
+
     from random import *
     import pygame
     pygame.mixer.init()
@@ -118,7 +138,10 @@ if Start == "dé":
             print("C'est raté, le chiffre était " + str(res) + " \U0001F612")
             print("Encore:")
 
-if Start == "jds":
+if Start == "4":
+    print("Vous avez choisi le jeu des stylos ! ")
+    print("Commençons...")
+    time.sleep(1)
     a = "|"
     k = int(input("Entrez le nombre de stylo de départ:"))
     b = a * k
@@ -135,7 +158,11 @@ if Start == "jds":
             print("Fin")
             break
 
-if Start == "pendu":
+if Start == "5":
+    print("Vous avez choisi le jeu du pendu ! ")
+    print("Commençons...")
+    time.sleep(1)
+
     mot = str(input("Entrez le mot: "))
     for m in range(30):
         print("|")
@@ -146,7 +173,7 @@ if Start == "pendu":
     print(cache)
     while True:
         letter = str(input("Entrez une lettre: "))
-        list = []
+        
 
         if letter in mot:
             for k in range(len(word)):
