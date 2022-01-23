@@ -15,7 +15,7 @@ if Start == "1":
 
 
 
-    plateau = [" " for i in range(9)]  
+    plateau = [" " for i in range(9)]
 
 
     def afficherPlateau(p, gagnant=None):
@@ -36,14 +36,14 @@ if Start == "1":
             afficherPlateau(plateau)
             print(" Tour du joueur " + joueur + ". Entrez un nombre de 1 à 9.")
 
-            move = int(input()) - 1  
+            move = int(input()) - 1
 
             if plateau[move] == " ":
                 plateau[move] = joueur
                 tour += 1
             else:
                 print("! Case déjà occupée, choisissez-en une autre.")
-                continue  
+                continue
 
             if plateau[0] == plateau[1] == plateau[2] != " " \
             or plateau[3] == plateau[4] == plateau[5] != " " \
@@ -170,10 +170,10 @@ if Start == "5":
     essai = 12
     print("Vous avez 12 essais")
     cache = ["_" for i in mot]
-    print(cache)
+    print(" ".join(cache))
     while True:
         letter = str(input("Entrez une lettre: "))
-        
+
 
         if letter in mot:
             for k in range(len(word)):
@@ -183,14 +183,14 @@ if Start == "5":
 
                 else:
                     cache[k] = cache[k]
-            print(cache)
+            print(" ".join(cache))
         else:
             essai -= 1
             print("Raté... il vous reste plus que " + str(essai) + " essais .")
+            print(" ".join(cache))
         if cache == word:
             print("Bravo !! Vous avez gagné. Vous avez trouvé le mot: " + mot + "!")
             break
         elif essai == 0:
             print("Dommage, vous avez perdu... le mot était: " + mot)
             break
-
