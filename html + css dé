@@ -1,0 +1,52 @@
+h1 { text-align:center;
+	text-decoration:underline;
+}
+img {width:520px;
+	   height:220px;
+	   
+}
+div {
+  text-align: center;
+}
+body { background-color:#C8AD7F;
+	   color:black;
+}
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>Jeu</title>
+		<link rel="stylesheet"href="jeu du dé css.css"/>
+		
+	</head>
+	
+	<body>
+		<h1> Le jeu du dé aléatoire</h1>
+
+		<div>
+			<img src="screen dé.PNG">
+		</div>
+		<p>Il fallait une animation assez réaliste pour faire comprendre au joueur que le dé se lance. On a donc utilisé le module "time" afin de crée un effet d'attente comme lorsque le dé se lance.</p>
+		<p>Il fallait stocker le numéro du dé "jeté" par l'ordinateur. Pour cela, dans la variable "res" (ligne 143), on y met un entier aléatoire entre 1 et 6, correspondant aux faces du dé.<p>
+		<p>A présent, il faut que l'utilisateur intéragisse avec l'ordinateur pour qu'il pusse jouer. Pour cela, dans la variable "guess" (ligne 144), grâce à la fonction "input", l'utilisateur peut mettre le numéro de la face sur laquelle le dé est tombé selon lui. Ce numéro est ici une chaîe de caractère. </p>
+		
+		<p>Il faut maintenant utiliser un algorithme pour savoir si le joueur a gagné ou non. On utilise donc l'outil "if", soit "si" en français. On demande à l'ordinateur de vérifier si la chaîne de caractère convertie en entier de la variable "guess" est la même que l'entier de la variable "res". Pour cela on utilise un bouléen "est égal". Si le résultat de ce bouléen est True, alors le joueur a gagné, sinon il a perdu.
+		<p>Pour que le jeu soit plus divertissant, il fallait améliorer l'interface dans la console python.Pour cela, on a ajouté des smiley à travers des caractères Unicode à plusieurs reprises, comme on le voit avec les codes en oranges précédés d'un "\". Ces caractères ont été trouvés dans ce <a href="https://www.savoirdanslavie.com/how-to-include-emojis-in-your-python-code/">site</a>. Aussi, on affiche un texte assez enfantin pour alimenter l'ambiance relaxante .</p>
+		<p>Il fallait que l'utilisateur puisse jouer tant qu'il le souhaite. Pour cela, la boucle "While True" permet de jouer au jeu à l'infini, et de le stopper lorsque le joueur voudra.</p>
+		
+		
+		
+		
+	
+		
+	</body>
+	
+		
+</html>
