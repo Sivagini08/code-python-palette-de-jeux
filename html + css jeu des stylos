@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Jeu des stylos</title>
+		<link rel="stylesheet"href="jeu des stylos.css"/>
+		
+	</head>
+	
+	<body>
+		<h1> Le jeu des stylos</h1>
+
+		<div>
+			<img class = "img" src="screen jeu des stylos.PNG">
+		</div>
+		<p>Le jeu des stylos se joue à 2. Il nous a donc fallut nommer les 2 joueurs. Les noms des joueurs sont stockés en chaîne de caractère dans les variables "jr1" et "jr2". Pour donner un aspect plus esthétique, la méthode ".capitalize" permet de mettre la première lettre du nom en majuscule.</p>
+		<p>Il a fallut dessiner les stylos pour avoir un aspect visuel. Pour cela on a crée une variable "a" dans laquelle on met une chaîne de caractère "|" qui représente un stylo."
+		<p>Pour donner plus de liberté, et donc plus de divertissement à l'utilisateur, on laisse les joueurs choisir le nombre de stylo avec lesquels ils vont jouer. On fait cela dans la variable "k", qui, grâce à la fonction "input", permet de rentrer un nombre entier.Il ne reste plus qu'à assembler le tout dans la variable "b" qui ressort en chaîne de caractère les stylos voulus par les joueurs.</p>
+		
+		<div>
+			<img class="image2" src="screen jds2.PNG">
+		</div>
+		<p>Pour ne pas écrire énormément de ligne de code, on fait une boucle "tant que"(ligne 166)</p>
+		<p>Il fallait faire en sorte que les joueurs puissent, tour à tour, enlever des stylos.</p>
+		<p>Pour enlever des stylos, on attribut à la variable "p1" la fonction "input" qui fait intéragir le joueur avec la machine afin d'entrer un nombre entier de stylo(s) à enlever. Maintenant que l'ordinateur sait combien de stylo il faut enlever, on retire ce nombre de la variable "k" pour avoir moins de stylos dans la variable "b". </p>
+		
+		<p> Pour avoir l'effet de tour à tour, on écrit deux fois le même code mais en changeant les variables: "p1" devient "p2" et "j1" devient "j2".</p>
+		<p> Enfin, pour savoir qui a gagné, on utilise l'outil algorithmique "if" qui permet de vérifier à l'aide d'un bouléen le nombre de stylo en utilisant la fonction "len".On rappelle qu'un joueur gagne s'il laisse un seul stylo. Donc si la longueur de "b" vaut 1, le dernier joueur à avoir jouer à gagner, et le jeu se termine, d'où l'utilisation de "break", qui termine la boucle "While True".</p>
+		
+		
+		
+	
+		
+	</body>
+	
+		
+</html>
+
+
+
+
+
+
+
+h1 { text-align:center;
+	text-decoration:underline;
+}
+.img {width:520px;
+	   height:220px;
+	   
+}
+.image2 {width:500px;
+		height:270px;
+}
+div {
+  text-align: center;
+}
+body { background-color:#D3D3D3;
+	   color:black;
+}
+p{font-family:Comic Sans MS;
+}
