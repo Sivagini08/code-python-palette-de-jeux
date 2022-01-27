@@ -1,0 +1,104 @@
+<html>
+    <head>
+	    <title>Premier projet</title>
+		<link rel="stylesheet" href="css projet 1.css">
+    </head>
+	
+	<body>
+	    <center>
+	        <FONT size="6pt"><h1>Game Newton</h1></FONT>
+			<Font color="#0F056B"<h2><font size="6pt"><u>Notre Projet</u></h2></font></Font>
+			<font size="5pt"><h2><i>Comment passer le temps avec des jeux FUN?</i></h2></font>
+		</center>
+		<table width="30%" height="20%" border=1>
+		    <tr>
+		        <td colspan="2"><FONT size="5pt"color="FF0000"><h3><i><center>Morpion</center></i></h3></FONT></td>
+			</tr>
+			<tr>
+			    <td><u><b>Règles du jeu:</b></u>Ce jeu se joue à deux : le joueur X et le joueur O.
+	<br>Lorsque vous lancer le code, entrez le numéro 1.
+Ensuite, une grille vide apparaît. C’est le joueur X qui commence.
+Chaque joueur doit entrer une nombre correspondant à une case de la grille : 1 pour la case 1, 2 pour la case 2…
+Le premier joueur à aligner 3 fois son signe (X ou O) gagne, ou sinon il y a égalité.</td>
+
+			</tr>
+		</table>
+		<table width="30%" height="20%" border=1 align="right">
+            <tr>
+			    <td colspan="2"><FONT size="5pt"color="FF0000"><h3><i><center>Pierre Feuille Ciseau</center></i></h3></FONT></td>
+			</tr>
+		
+            <tr>
+			    <td><u><b>Règles du jeu:</b></u>Ce jeu se joue à deux , vous devez entrer les noms des deux joueurs dès le début.
+	Lorsque vous lancer le code, entrez le numéro 1.
+Ensuite, il faut tout simplement écrire pierre, feuille ou ciseau.
+Le jeu se termine lorsque les joueurs le désirent.</td>
+
+			</tr>	
+		</table>
+		<table width="30%" height="20%" border=1 align="center">
+		    <br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<tr>
+				<td colspan="2"><FONT size="5pt"color="FF0000"><h3><i><center>Jeu du dé aléatoire</center></i></h3></FONT></td>
+			</tr>
+			<tr>
+				<td><u><b>Règles du jeu:</b></u>Ce jeu se joue tout seul. C’est un jeu de chance contre l’ordinateur.
+Il suffit simplement de trouver sur quelle face le dé lancé par l’ordinateur est tombé.
+Le jeu se termine lorsque le joueur le désire.</td>
+
+			</tr>
+		</table>
+		<table width="30%" height="20%" border=1>
+		    <tr>
+		        <td colspan="2"><FONT size="5pt"color="FF0000"><h3><i><center>Jeu des stylos</center></i></h3></FONT></td>
+			</tr>
+			<tr>
+			    <td><u><b>Règles du jeu:</b></u>Ce jeu se joue à deux , vous devez entrer les noms des deux joueurs dès le début.
+Les joueurs doivent choisir le nombre de stylos avec lesquels ils vont jouer (entre 10 et 20 de préférence).
+Une fois cela fait, à tour de rôle, chaque joueur devra enlever tour à tour 1, 2 ou 3 stylos.
+Lorsqu’il reste un seul stylo, le dernier joueur ayant enlevé des stylos à gagner. Le jeu se finit à ce moment.</td>
+
+			</tr>
+		</table>
+		<table width="30%" height="20%" border=1 align="right">
+            <tr>
+			    <td colspan="2"><FONT size="5pt"color="FF0000"><h3><i><center>Pendu</center></i></h3></FONT></td>
+			</tr>
+		
+            <tr>
+			    <td><u><b>Règles du jeu:</b></u>Ce jeu se joue à deux.
+Le premier joueur écrit le mot à deviner (l’autre joueur ne regarde pas l’écran).
+Le deuxième joueur tente de trouver le mot en écrivant une lettre à chaque fois. S’il la lettre se trouve dans le mot, elle s’affiche, sinon le dessin du pendu commence à apparaître.
+Le jeu se finit quand le deuxième joueur à trouver le mot, ou quand il n’a plus d’essais.</td>
+
+			</tr>	
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</body>
+</html>
