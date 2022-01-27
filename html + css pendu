@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Jeu du pendu</title>
+		<link rel="stylesheet"href="pendu.css"/>
+		
+	</head>
+	
+	<body>
+		<h1> Le jeu du pendu</h1>
+
+		<div>
+			<img class = "img" src="screen pendu 1.PNG">
+		</div>
+		<p>Le jeu du pendu se joue à deux. Pour que le premier joueur entre le mot à deviner, on utilise la fonction "input" dans la variable "mot" qui va renvoyer une chaîne de caractère. Etant donné que le jeu se joue sur la même console python, il fallait que le second joueur puisse regarder la console sans voir le mot écrit par le joueur 1. Pour cela, on utilise une boucle "pour m allant de 1 à 30" qui va afficher une simple barre sur 30 lignes. Cela permet de faire en sorte que le mot à deviner ne soit plus visible dans la console car il sera trop haut.</p>
+		<p>Il faut maintenant créer un mécanisme pour que le 2ème joueur puisse chercher les lettres du mot à deviner. Pour cela, on crée une variable "word" qui va convertir la chaîne de caractère "mot" en liste. Il est donc plus facile de naviguer entre chaque lettre du mot grâce aux propriétés d'une liste.</p>
+		<p>On initialise le nombre d'essais que le joueur aura pour trouver le mot dans la variable "essai" qui est un entier.</p>
+		<p>Pour que le second joueur puisse voir le nombre de lettres, on crée une nouvelle liste en compréhension (comme on l'a vu dans le cours "Tableau et compréhension")qui affiche un trait "_" pour chaque lettre du mot. Nous sommes confrontés à un nouveau problème, lorsque l'on affiche cette liste, ce n'est pas très clair. En effet, les crochets et la séparation avec les virgules gènent un peu. On applique donc la méthode ".join" qui permet d'enlever ces détails gênants. 
+		<p> On utilise la boucle "while True" pour que le code se répète jusqu'à la fin d'une partie.</p>
+		<div>
+			<img class="image2" src="Screen pendu 2.PNG">
+		</div>
+		<p>Maintenant que l'on a les bases du jeu, il faut que l'interaction entre le joueur 2 et la machine permette de jouer. Les lettres que le joueur 2 va mettre sont dans la variable "letter" qui est une chaîne de caractère. La fonction "inut" permet au joueur d'entrer la lettre dans la console.</p>
+		<p>Pour savoir si une lettre est dans le mot, on utilise le bouléen "in". On utilise aussi l'outil algorithmique "si" pour tester si le bouléen "in" renvoie "True". Si c'est le cas, on doit faire apparaître la lettre dans le mot en remplaçant le trait "_" correspondant. Ici, deux problèmes s'offrent à nous: il faut d'abord faire en sorte que la lettre soit remplacée dans tout le mot : par exemple, s'il y a deux fois la même lettre dans le mot, il faut que les deux lettres s'affichent. Pour cela, on utilise simplement une boucle "for" qui va vérifier chaque lettre dans la liste "word" grpace à l'outil "len".<br> Le deuxième problème est le fait de remplacer le trait "_" par la lettre du mot. Pour cela, dans la boucle "for", on vérifie si la lettre du joueur 2 est égale à chaque lettre du mot converti en liste dans "word". On fait cela avec le test "if" et le bouléen d'égalité. Si le test renvoie "True", c'est là que les propriétés des listes deviennent intéressantes. En effet, on a juste à dire à l'ordinaeur que le trait "_" de la variable "cache" correspondant à la place de la lettre trouvée devienne la lettre de la même position que l'on a dans la variable "word". Sinon, le trait "_" ne change pas.</p>
+		<p>Par contre, si la lettre n'est pas dans le mot, le joueur 2 perd un essai. Pour que le jeu soit plus divertissant est plus visuel, on a effectué le dessin d'un pendu qui se complète à chaque essai en moins:</p>
+		<div>
+			<img class = "image3" src="screen pendu 3.PNG"> <img class = "image3" src="screen pendu 4.PNG"> 
+		</div>
+		<br>
+		<br>
+		<p>Pour la fin du jeu, il y a deux issues possibles: soit le joueur 2 gagne, soit il perd.
+		<div>
+			<img src="Screen pendu 5.PNG">
+		</div>
+		<p>Le joueur 2 gagne s'il a remplacé tous les traits "_" par les lettres. On effectue donc un test avec "if" en demandant si la variable "cache" est égale à la variable "word" grâce au bouléen d'égalité. Si c'est le cas, il faut donc terminer le jeu, donc la boucle, à l'aide de "break".</p>
+		<p> Le joueur 2 perd s'il n'a plus d'essai. Il faut donc tout simplement demander à l'ordinateur d'arrêter la boucle si le nombre d'essai est nul. On fait donc un autre test pour savoir cela à l'aide d'un bouléen. Si ce test renvoie "True", le jeu s'arrête, et une phrase précisant aux joueurs que c'est fini apparaît.</p>
+		
+		
+		
+	
+		
+	</body>
+	
+		
+</html>
+
+
+
+
+
+
+h1 { text-align:center;
+	text-decoration:underline;
+}
+.img {width:520px;
+	   height:220px;
+	   
+}
+.image2 {width:550px;
+		height:280px;
+}
+.image3{width:550px;
+		height:350px;
+}
+
+div {
+  text-align: center;
+}
+body { background-color:#D3D3D3;
+	   color:black;
+}
+p{font-family:Comic Sans MS;
+}
